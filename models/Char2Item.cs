@@ -6,11 +6,12 @@ namespace Player.Models
 {
     public class Char2Item
     {
-        public int CharacterID {get; set;} //nav property
-          public Character Character {get; set;} //pk
 
-        public int ItemID {get; set;} //mav property
-          public Item Item {get; set;} //pk
+        public int CharacterID {get; set;} //pk
+          public Character Character {get; set;} //nav property
+
+        public int ItemID {get; set;} //pk
+          public Item Item {get; set;} //nav property
 
     }
 }
