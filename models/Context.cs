@@ -24,9 +24,8 @@ namespace Player.Models
             modelBuilder.Entity<Char2Item>()
             .HasKey(mc => new { mc.CharacterID, mc.ItemID });
 
-
             modelBuilder.Entity<Char2Spell>()
-            .HasKey(mc => new { mc.CharacterID, mc.SpellID });
+            .HasKey(sc => new { sc.CharacterID, sc.SpellID });
 
 
         } 
