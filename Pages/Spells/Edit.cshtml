@@ -1,0 +1,45 @@
+@page
+@model FinalProject.Pages.Spells.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Spell</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Spell.SpellID" />
+            <div class="form-group">
+                <label asp-for="Spell.SpellName" class="control-label"></label>
+                <input asp-for="Spell.SpellName" class="form-control" />
+                <span asp-validation-for="Spell.SpellName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spell.SpellInstructions" class="control-label"></label>
+                <input asp-for="Spell.SpellInstructions" class="form-control" />
+                <span asp-validation-for="Spell.SpellInstructions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spell.DamageRoll" class="control-label"></label>
+                <input asp-for="Spell.DamageRoll" class="form-control" />
+                <span asp-validation-for="Spell.DamageRoll" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

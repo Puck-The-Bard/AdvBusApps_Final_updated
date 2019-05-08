@@ -2774,6 +2774,26 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages\\Items\\Delete.cshtml",
+      "TargetPath": "Pages\\Items\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Spells\\Edit.cshtml",
+      "TargetPath": "Pages\\Spells\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Items\\Create.cshtml",
+      "TargetPath": "Pages\\Items\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Spells\\Details.cshtml",
+      "TargetPath": "Pages\\Spells\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages\\Characters\\Create.cshtml",
       "TargetPath": "Pages\\Characters\\Create.cshtml",
       "FileKind": "mvc"
@@ -2784,6 +2804,26 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages\\Spells\\Index.cshtml",
+      "TargetPath": "Pages\\Spells\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Items\\Details.cshtml",
+      "TargetPath": "Pages\\Items\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Spells\\Delete.cshtml",
+      "TargetPath": "Pages\\Spells\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Spells\\Create.cshtml",
+      "TargetPath": "Pages\\Spells\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -2791,6 +2831,11 @@
     {
       "FilePath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Items\\Edit.cshtml",
+      "TargetPath": "Pages\\Items\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2821,6 +2866,11 @@
     {
       "FilePath": "Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Items\\Index.cshtml",
+      "TargetPath": "Pages\\Items\\Index.cshtml",
       "FileKind": "mvc"
     }
   ]

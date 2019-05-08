@@ -1,0 +1,37 @@
+@page
+@model FinalProject.Pages.Spells.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Spell</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Spell.SpellName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Spell.SpellName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Spell.SpellInstructions)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Spell.SpellInstructions)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Spell.DamageRoll)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Spell.DamageRoll)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Spell.SpellID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

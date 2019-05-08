@@ -68,3 +68,13 @@ c:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Fi
 c:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\FinalProject.dll
 c:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\FinalProject.pdb
 C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\FinalProject.csproj.CopyComplete
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Spells\Create.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Spells\Delete.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Spells\Details.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Spells\Edit.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Spells\Index.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Items\Create.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Items\Delete.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Items\Details.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Items\Edit.g.cshtml.cs
+C:\Users\Zach\Downloads\AdvBusApp-Final-master-20190507T230331Z-001\AdvBusApp-Final-master\AdvBusApp-Final-master\obj\Debug\netcoreapp2.2\Razor\Pages\Items\Index.g.cshtml.cs

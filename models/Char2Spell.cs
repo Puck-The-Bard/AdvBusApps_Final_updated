@@ -6,6 +6,7 @@ namespace Player.Models
 {
     public class Char2Spell
     {
+        public int Char2SpellID {get; set;}
 
         public int CharacterID {get; set;} //pk
           public Character Character {get; set;} //nav property
