@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Player.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FinalProject.Pages.Characters
 {
@@ -19,9 +22,19 @@ namespace FinalProject.Pages.Characters
         }
 
         public Character Character { get; set; }
+        
+        public string Name {get; set;}
+
+        public string SeachString {get; set;}
+
+        public SelectList SelectItems{get; set;}
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
+
+             //get a list of all items
+            SelectItems = new SelectList(_context.Items.OrderBy(c => c.ItemName).ToList(), "ItemID", "ItemName", id);
+
             if (id == null)
             {
                 return NotFound();

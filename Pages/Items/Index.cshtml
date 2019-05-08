@@ -14,6 +14,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Item[0].ItemName)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Item[0].ItemFlvrTxt)
             </th>
             <th>
@@ -25,6 +28,9 @@
     <tbody>
 @foreach (var item in Model.Item) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemName)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ItemFlvrTxt)
             </td>
