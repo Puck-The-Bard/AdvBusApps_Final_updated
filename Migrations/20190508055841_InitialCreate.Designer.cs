@@ -9,7 +9,7 @@ using Player.Models;
 namespace FinalProject.Migrations
 {
     [DbContext(typeof(CharacterDbContext))]
-    [Migration("20190508020209_InitialCreate")]
+    [Migration("20190508055841_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

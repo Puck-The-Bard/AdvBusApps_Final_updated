@@ -20,8 +20,7 @@ namespace Player.Models
 
          protected override void OnModelCreating(ModelBuilder modelBuilder) //creating bridge table composit keys
         {
-           // modelBuilder.Entity<Char2Item>().ToTable("Items");
-
+        
             modelBuilder.Entity<Char2Item>()
             .HasKey(mc => new { mc.CharacterID, mc.ItemID });
 
