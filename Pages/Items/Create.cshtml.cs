@@ -11,9 +11,9 @@ namespace FinalProject.Pages.Items
 {
     public class CreateModel : PageModel
     {
-        private readonly Context _context;
+        private readonly Player.Models.CharacterDbContext _context;
 
-        public CreateModel(Context context)
+        public CreateModel(Player.Models.CharacterDbContext context)
         {
             _context = context;
         }
@@ -33,7 +33,7 @@ namespace FinalProject.Pages.Items
                 return Page();
             }
 
-            _context.Item.Add(Item);
+            _context.Items.Add(Item);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

@@ -11,9 +11,9 @@ namespace FinalProject.Pages.Items
 {
     public class DetailsModel : PageModel
     {
-        private readonly Context _context;
+        private readonly Player.Models.CharacterDbContext _context;
 
-        public DetailsModel(Context context)
+        public DetailsModel(Player.Models.CharacterDbContext context)
         {
             _context = context;
         }
@@ -27,7 +27,7 @@ namespace FinalProject.Pages.Items
                 return NotFound();
             }
 
-            Item = await _context.Item.FirstOrDefaultAsync(m => m.ItemID == id);
+            Item = await _context.Items.FirstOrDefaultAsync(m => m.ItemID == id);
 
             if (Item == null)
             {

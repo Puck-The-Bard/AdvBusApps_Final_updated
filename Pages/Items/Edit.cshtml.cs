@@ -12,9 +12,9 @@ namespace FinalProject.Pages.Items
 {
     public class EditModel : PageModel
     {
-        private readonly Context _context;
+        private readonly Player.Models.CharacterDbContext _context;
 
-        public EditModel(Context context)
+        public EditModel(Player.Models.CharacterDbContext context)
         {
             _context = context;
         }
@@ -29,7 +29,7 @@ namespace FinalProject.Pages.Items
                 return NotFound();
             }
 
-            Item = await _context.Item.FirstOrDefaultAsync(m => m.ItemID == id);
+            Item = await _context.Items.FirstOrDefaultAsync(m => m.ItemID == id);
 
             if (Item == null)
             {
@@ -68,7 +68,7 @@ namespace FinalProject.Pages.Items
 
         private bool ItemExists(int id)
         {
-            return _context.Item.Any(e => e.ItemID == id);
+            return _context.Items.Any(e => e.ItemID == id);
         }
     }
 }

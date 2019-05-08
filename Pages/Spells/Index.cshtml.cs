@@ -11,9 +11,9 @@ namespace FinalProject.Pages.Spells
 {
     public class IndexModel : PageModel
     {
-        private readonly Context _context;
+        private readonly Player.Models.CharacterDbContext _context;
 
-        public IndexModel(Context context)
+        public IndexModel(Player.Models.CharacterDbContext context)
         {
             _context = context;
         }
@@ -22,7 +22,7 @@ namespace FinalProject.Pages.Spells
 
         public async Task OnGetAsync()
         {
-            Spell = await _context.Spell.ToListAsync();
+            Spell = await _context.Spells.ToListAsync();
         }
     }
 }

@@ -11,9 +11,9 @@ namespace FinalProject.Pages.Spells
 {
     public class DeleteModel : PageModel
     {
-        private readonly Context _context;
+        private readonly Player.Models.CharacterDbContext _context;
 
-        public DeleteModel(Context context)
+        public DeleteModel(Player.Models.CharacterDbContext context)
         {
             _context = context;
         }
@@ -28,7 +28,7 @@ namespace FinalProject.Pages.Spells
                 return NotFound();
             }
 
-            Spell = await _context.Spell.FirstOrDefaultAsync(m => m.SpellID == id);
+            Spell = await _context.Spells.FirstOrDefaultAsync(m => m.SpellID == id);
 
             if (Spell == null)
             {
@@ -44,11 +44,11 @@ namespace FinalProject.Pages.Spells
                 return NotFound();
             }
 
-            Spell = await _context.Spell.FindAsync(id);
+            Spell = await _context.Spells.FindAsync(id);
 
             if (Spell != null)
             {
-                _context.Spell.Remove(Spell);
+                _context.Spells.Remove(Spell);
                 await _context.SaveChangesAsync();
             }
 

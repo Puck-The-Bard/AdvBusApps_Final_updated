@@ -11,9 +11,9 @@ namespace FinalProject.Pages.Items
 {
     public class IndexModel : PageModel
     {
-        private readonly Context _context;
+        private readonly Player.Models.CharacterDbContext _context;
 
-        public IndexModel(Context context)
+        public IndexModel(Player.Models.CharacterDbContext context)
         {
             _context = context;
         }
@@ -22,7 +22,7 @@ namespace FinalProject.Pages.Items
 
         public async Task OnGetAsync()
         {
-            Item = await _context.Item.ToListAsync();
+            Item = await _context.Items.ToListAsync();
         }
     }
 }
