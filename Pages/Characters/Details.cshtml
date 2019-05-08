@@ -73,6 +73,25 @@
         </dd>
     </dl>
 </div>
+
+<div>
+    <h4>Inventory</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Character.Items)
+        </dt>
+    </dl>
+</div>
+<div>
+    <h4>Spells</h4>
+    <hr />
+    <dl>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Character.Spells)
+        </dt>
+    </dl>
+</div>
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Character.CharacterID">Edit</a> |
     <a asp-page="./Index">Back to List</a>
