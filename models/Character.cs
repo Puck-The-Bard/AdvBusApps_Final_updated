@@ -19,5 +19,7 @@ namespace Player.Models
         public int Charasma { get; set; }
 
         public List<Char2Item> Items { get; set; }
+
+        public List<Char2Spell> Spells {get; set;}
     }
 }

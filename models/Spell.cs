@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Player.Models
@@ -9,5 +10,7 @@ namespace Player.Models
         public string SpellName {get; set;}
         public string SpellInstructions {get; set;}
         public string DamageRoll {get; set;}
+
+        public List<Character> Characters {get; set;}
     }
 }
