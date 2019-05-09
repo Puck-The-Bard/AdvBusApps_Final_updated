@@ -81,12 +81,6 @@
 
         </dd>
         <ul>
-           
-                @* List each course the student is enrolled in
-                   Display an HTML button next to each course to Drop the course.
-                   In order to drop a course, we must know the courseID. Use the hidden input type for that
-                   The button uses asp-page-handler to call OnPostDeleteCourse() method
-                *@
                 @foreach(var item in Model.Character.Items)
                 {
                      <form method="post">
