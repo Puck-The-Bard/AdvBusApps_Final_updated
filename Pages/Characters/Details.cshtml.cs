@@ -53,9 +53,9 @@ namespace FinalProject.Pages.Characters
             }
             return Page();
         }
-        public async Task<IActionResult> OnPostDeleteCourseAsync(int? id)
+        public async Task<IActionResult> OnPostDeleteItemAsync(int? id)
         {
-            _log.LogWarning($"OnPost: Character Id {id}, DROP course {ItemIdToDelete}");
+            _log.LogWarning($"OnPost: Character Id {id}, DROP item {ItemIdToDelete}");
             if (id == null)
             {
                 return NotFound();
@@ -63,14 +63,14 @@ namespace FinalProject.Pages.Characters
 
             Character = await _context.Characters.Include(s => s.Items).ThenInclude(sc => sc.Item).FirstOrDefaultAsync(m => m.CharacterID == id);
             AllItems = await _context.Items.ToListAsync();
-            ItemDropDown = new SelectList(AllItems, "CourseID", "Description");
+            ItemDropDown = new SelectList(AllItems, "ItemID", "Description");
             
             if (Character == null)
             {
                 return NotFound();
             }
 
-            Char2Item ItemToDrop = _context.Char2Items.Find(ItemIdToDelete, id.Value);
+            Char2Item ItemToDrop = _context.Char2Items.Find(ItemIdToDelete, id);
 
             if (ItemToDrop != null)
             {
@@ -88,10 +88,10 @@ namespace FinalProject.Pages.Characters
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            _log.LogWarning($"OnPost: Character Id {id}, ADD course {ItemIdToAdd}");
+            _log.LogWarning($"OnPost: Character Id {id}, ADD item {ItemIdToAdd}");
             if (ItemIdToAdd == 0)
             {
-                ModelState.AddModelError("CourseIdToAdd", "This field is a required field.");
+                ModelState.AddModelError("ItemIdToAdd", "This field is a required field.");
                 return Page();
             }
             if (id == null)
@@ -108,7 +108,7 @@ namespace FinalProject.Pages.Characters
                 return NotFound();
             }
 
-            if (!_context.Char2Items.Any(sc => sc.ItemID == ItemIdToAdd && sc.CharacterID == id.Value))
+            if (!_context.Char2Items.Any(sc => sc.ItemID == ItemIdToAdd && sc.CharacterID == id))
             {
                 Char2Item ItemToAdd = new Char2Item { CharacterID = id.Value, ItemID = ItemIdToAdd};
                 _context.Add(ItemToAdd);

@@ -6,7 +6,7 @@ namespace Player.Models
 {
     public class Char2Item
     {
-        public int Char2ItemID {get; set;}
+       // public int Char2ItemID {get; set;}
 
         public int CharacterID {get; set;} //pk
           public Character Character {get; set;} //nav property
