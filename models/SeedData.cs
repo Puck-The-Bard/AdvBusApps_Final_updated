@@ -15,11 +15,19 @@ namespace Player.Models
                     DbContextOptions<CharacterDbContext>>()))
             {
                 // Look for any characters.
-                if (context.Characters.Any())
+                 if (context.Characters.Any())
                 {
                     return;   // DB has been seeded
                 }
-
+                if (context.Spells.Any())
+                {
+                    return;   // DB has been seeded
+                }
+                if (context.Items.Any())
+                {
+                    return;   // DB has been seeded
+                }
+                
                 context.Characters.AddRange(
                     new Character
                     {
