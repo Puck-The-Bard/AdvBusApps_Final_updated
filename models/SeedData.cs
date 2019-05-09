@@ -14,7 +14,7 @@ namespace Player.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<CharacterDbContext>>()))
             {
-            /*    // Look for any characters.
+                // Look for any characters.
                  if (context.Characters.Any())
                 {
                     return;   // DB has been seeded
@@ -27,7 +27,7 @@ namespace Player.Models
                 {
                     return;   // DB has been seeded
                 }
-             */
+             
                 context.Characters.AddRange(
                     new Character
                     {

@@ -123,3 +123,4 @@ c:\Users\zmcgu\Documents\2019_ClassesWT_Sem1\AdvBusApps\FinalProject\AdvBusApps_
 c:\Users\zmcgu\Documents\2019_ClassesWT_Sem1\AdvBusApps\FinalProject\AdvBusApps_Final_updated\obj\Debug\netcoreapp2.2\Razor\Pages\Spells\Details.g.cshtml.cs
 c:\Users\zmcgu\Documents\2019_ClassesWT_Sem1\AdvBusApps\FinalProject\AdvBusApps_Final_updated\obj\Debug\netcoreapp2.2\Razor\Pages\Spells\Edit.g.cshtml.cs
 c:\Users\zmcgu\Documents\2019_ClassesWT_Sem1\AdvBusApps\FinalProject\AdvBusApps_Final_updated\obj\Debug\netcoreapp2.2\Razor\Pages\Spells\Index.g.cshtml.cs
+c:\Users\zmcgu\Documents\2019_ClassesWT_Sem1\AdvBusApps\FinalProject\AdvBusApps_Final_updated\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LayoutGrayBoyz.g.cshtml.cs
