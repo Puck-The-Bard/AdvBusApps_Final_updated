@@ -29,15 +29,25 @@ namespace FinalProject.Pages.Characters
         
         public string Name {get; set;}
 
+        [BindProperty(SupportsGet = true)]
         public int GetItemID{get; set;}
 
         public string SeachString {get; set;}
 
         public SelectList SelectItems{get; set;}
 
+
         public async Task<IActionResult> OnGetAsync(int? id)
         {
+            var FindItem = _context.Char2Items.Where(it => it.ItemID == GetItemID).FirstOrDefault();
 
+
+            new Char2Item
+            {
+                CharacterID = Character.CharacterID,
+                ItemID = FindItem.ItemID
+            };
+            
              //get a list of all items
             SelectItems = new SelectList(_context.Items.OrderBy(c => c.ItemName).ToList(), "ItemID", "ItemName", id);
 
