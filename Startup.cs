@@ -12,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Player.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinalProject
+namespace Player.Models
 {
     public class Startup
     {

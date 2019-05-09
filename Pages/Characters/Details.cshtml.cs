@@ -22,8 +22,14 @@ namespace FinalProject.Pages.Characters
         }
 
         public Character Character { get; set; }
+
+        public Item Item {get; set;}
+
+        public Spell Spell {get; set;}
         
         public string Name {get; set;}
+
+        public int GetItemID{get; set;}
 
         public string SeachString {get; set;}
 
