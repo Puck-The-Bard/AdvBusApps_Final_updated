@@ -14,28 +14,20 @@ namespace Player.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<CharacterDbContext>>()))
             {
-                  // Look for any characters.
+            /*    // Look for any characters.
                  if (context.Characters.Any())
                 {
                     return;   // DB has been seeded
                 }
-                if (context.Spells.Any())
+                else if (context.Spells.Any())
                 {
                     return;   // DB has been seeded
                 }
-                if (context.Items.Any())
+                else if (context.Items.Any())
                 {
                     return;   // DB has been seeded
                 }
-             
-
-                context.Char2Items.AddRange(
-                    new Char2Item
-                    {
-                        CharacterID = 1,
-                        ItemID = 1
-                    }
-                );
+             */
                 context.Characters.AddRange(
                     new Character
                     {

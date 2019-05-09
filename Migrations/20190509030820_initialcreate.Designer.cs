@@ -9,8 +9,8 @@ using Player.Models;
 namespace FinalProject.Migrations
 {
     [DbContext(typeof(CharacterDbContext))]
-    [Migration("20190508210230_ItemName")]
-    partial class ItemName
+    [Migration("20190509030820_initialcreate")]
+    partial class initialcreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,8 +24,6 @@ namespace FinalProject.Migrations
 
                     b.Property<int>("ItemID");
 
-                    b.Property<int>("Char2ItemID");
-
                     b.HasKey("CharacterID", "ItemID");
 
                     b.HasIndex("ItemID");
@@ -38,8 +36,6 @@ namespace FinalProject.Migrations
                     b.Property<int>("CharacterID");
 
                     b.Property<int>("SpellID");
-
-                    b.Property<int>("Char2SpellID");
 
                     b.HasKey("CharacterID", "SpellID");
 

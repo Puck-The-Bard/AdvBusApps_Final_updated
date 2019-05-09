@@ -2,7 +2,7 @@
 
 namespace FinalProject.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class initialcreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,6 +12,7 @@ namespace FinalProject.Migrations
                 {
                     ItemID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
+                    ItemName = table.Column<string>(nullable: true),
                     ItemFlvrTxt = table.Column<string>(nullable: true),
                     ItemAbil = table.Column<string>(nullable: true)
                 },

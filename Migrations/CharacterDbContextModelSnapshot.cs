@@ -22,8 +22,6 @@ namespace FinalProject.Migrations
 
                     b.Property<int>("ItemID");
 
-                    b.Property<int>("Char2ItemID");
-
                     b.HasKey("CharacterID", "ItemID");
 
                     b.HasIndex("ItemID");
@@ -36,8 +34,6 @@ namespace FinalProject.Migrations
                     b.Property<int>("CharacterID");
 
                     b.Property<int>("SpellID");
-
-                    b.Property<int>("Char2SpellID");
 
                     b.HasKey("CharacterID", "SpellID");
 
